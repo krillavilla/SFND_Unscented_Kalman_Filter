@@ -1,0 +1,176 @@
+# Build directories
+build/
+cmake-build-debug/
+cmake-build-release/
+out/
+Debug/
+Release/
+x64/
+x86/
+
+# Compiled Object files
+*.o
+*.obj
+*.lo
+*.slo
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.a
+*.la
+*.lai
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+ukf_highway
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# IDE specific files
+## Visual Studio
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+ipch/
+*.VC.db
+*.VC.opendb
+
+## Visual Studio Code
+.vscode/
+.history/
+
+## JetBrains IDEs (CLion, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+
+## Eclipse
+.project
+.cproject
+.settings/
+.classpath
+
+# OS specific files
+## macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+## Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+## Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Dependency directories
+/vcpkg/
+/conan/
+/deps/
+/third_party/
+/external/
+!/src/Eigen/
+
+# Log files
+*.log
+log/
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Python cache files (if using Python scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Code coverage
+*.gcov
+*.gcda
+*.gcno
+coverage/
+
+# Profiling data
+gmon.out
+callgrind.out*
+perf.data*
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Doxygen generated documentation
+docs/html/
+docs/latex/
+docs/xml/
+docs/man/
+
+# User-specific files
+*.user
+*.suo
+*.userprefs
+*.usertasks
+*.pid
+*.seed
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Keep all source files
+!*.cpp
+!*.h
+!*.hpp
+
+# Keep documentation
+!*.md
+!LICENSE
+!docs/*.md
+!docs/*.txt
+
+# Keep configuration files
+!.gitignore
+!.gitattributes
+!.clang-format
+!.clang-tidy

@@ -41,6 +41,29 @@ class UKF {
    */
   void UpdateRadar(MeasurementPackage meas_package);
 
+  /**
+   * Generates augmented sigma points
+   */
+  void GenerateAugmentedSigmaPoints(Eigen::MatrixXd* Xsig_out);
+
+  /**
+   * Predicts sigma points
+   * @param Xsig_aug Augmented sigma points
+   * @param delta_t Time between k and k+1 in s
+   */
+  void SigmaPointPrediction(const Eigen::MatrixXd& Xsig_aug, double delta_t);
+
+  /**
+   * Predicts mean and covariance
+   */
+  void PredictMeanAndCovariance();
+
+  /**
+   * Normalizes angle to be between -pi and pi
+   * @param angle Angle to normalize
+   * @return Normalized angle
+   */
+  double NormalizeAngle(double angle);
 
   // initially set to false, set to true in first call of ProcessMeasurement
   bool is_initialized_;
@@ -95,6 +118,9 @@ class UKF {
 
   // Sigma point spreading parameter
   double lambda_;
+
+  // Number of sigma points
+  int n_sig_;
 };
 
 #endif  // UKF_H
